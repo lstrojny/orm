@@ -1,16 +1,6 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$associationMappings\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Cache/DefaultCache.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$rootEntityName\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Cache/DefaultCache.php
-
-		-
 			message: "#^Method Doctrine\\\\ORM\\\\Cache\\\\DefaultCollectionHydrator\\:\\:loadCacheEntry\\(\\) should return array but returns null\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Cache/DefaultCollectionHydrator.php
@@ -66,11 +56,6 @@ parameters:
 			path: lib/Doctrine/ORM/Cache/Persister/Collection/AbstractCollectionPersister.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Cache\\\\EntityHydrator\\:\\:buildCacheEntry\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Cache/Persister/Collection/AbstractCollectionPersister.php
-
-		-
 			message: "#^Parameter \\#2 \\$key of method Doctrine\\\\ORM\\\\Cache\\\\EntityHydrator\\:\\:buildCacheEntry\\(\\) expects Doctrine\\\\ORM\\\\Cache\\\\EntityCacheKey, Doctrine\\\\ORM\\\\Cache\\\\CacheKey given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Cache/Persister/Collection/AbstractCollectionPersister.php
@@ -88,11 +73,6 @@ parameters:
 		-
 			message: "#^Access to an undefined property Doctrine\\\\ORM\\\\Cache\\\\CacheEntry\\:\\:\\$class\\.$#"
 			count: 2
-			path: lib/Doctrine/ORM/Cache/Persister/Entity/AbstractEntityPersister.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$rootEntityName\\.$#"
-			count: 1
 			path: lib/Doctrine/ORM/Cache/Persister/Entity/AbstractEntityPersister.php
 
 		-
@@ -116,29 +96,9 @@ parameters:
 			path: lib/Doctrine/ORM/Cache/Persister/Entity/AbstractEntityPersister.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Cache\\\\EntityHydrator\\:\\:buildCacheEntry\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 2
-			path: lib/Doctrine/ORM/Cache/Persister/Entity/AbstractEntityPersister.php
-
-		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Cache\\\\EntityHydrator\\:\\:loadCacheEntry\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Cache/Persister/Entity/AbstractEntityPersister.php
-
-		-
 			message: "#^Parameter \\#3 \\$entry of method Doctrine\\\\ORM\\\\Cache\\\\EntityHydrator\\:\\:loadCacheEntry\\(\\) expects Doctrine\\\\ORM\\\\Cache\\\\EntityCacheEntry, Doctrine\\\\ORM\\\\Cache\\\\CacheEntry given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Cache/Persister/Entity/AbstractEntityPersister.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$rootEntityName\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Cache/Persister/Entity/NonStrictReadWriteCachedEntityPersister.php
-
-		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Cache\\\\EntityHydrator\\:\\:buildCacheEntry\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Cache/Persister/Entity/NonStrictReadWriteCachedEntityPersister.php
 
 		-
 			message: "#^Call to an undefined method Doctrine\\\\ORM\\\\Cache\\\\Region\\:\\:lock\\(\\)\\.$#"
@@ -176,41 +136,6 @@ parameters:
 			path: lib/Doctrine/ORM/Decorator/EntityManagerDecorator.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$identifier\\.$#"
-			count: 5
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isIdentifierComposite\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$name\\.$#"
-			count: 10
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$rootEntityName\\.$#"
-			count: 3
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$subClasses\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:newInstance\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setIdentifierValues\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
 			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/EntityManager.php
@@ -226,11 +151,6 @@ parameters:
 			path: lib/Doctrine/ORM/EntityManager.php
 
 		-
-			message: "#^Method Doctrine\\\\ORM\\\\EntityManager\\:\\:getClassMetadata\\(\\) should return Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata but returns Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/EntityManager.php
-
-		-
 			message: "#^Method Doctrine\\\\ORM\\\\EntityManager\\:\\:getReference\\(\\) should return T\\|null but returns Doctrine\\\\Common\\\\Proxy\\\\Proxy\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/EntityManager.php
@@ -241,13 +161,13 @@ parameters:
 			path: lib/Doctrine/ORM/EntityManager.php
 
 		-
-			message: "#^Parameter \\#2 \\$class of method Doctrine\\\\ORM\\\\EntityManager\\:\\:checkLockRequirements\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Result of && is always false\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/EntityManager.php
 
 		-
-			message: "#^Result of && is always false\\.$#"
-			count: 1
+			message: "#^Return type \\(Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataFactory\\) of method Doctrine\\\\ORM\\\\EntityManager\\:\\:getMetadataFactory\\(\\) should be compatible with return type \\(Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadataFactory\\<Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<object\\>\\>\\) of method Doctrine\\\\Persistence\\\\ObjectManager\\:\\:getMetadataFactory\\(\\)$#"
+			count: 2
 			path: lib/Doctrine/ORM/EntityManager.php
 
 		-
@@ -396,11 +316,6 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isEmbeddedClass\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
-
-		-
 			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isMappedSuperclass\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
@@ -417,7 +332,7 @@ parameters:
 
 		-
 			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$name\\.$#"
-			count: 4
+			count: 3
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
 		-
@@ -551,7 +466,7 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
 		-
-			message: "#^Parameter \\#1 \\$definition of method Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo\\:\\:setSequenceGeneratorDefinition\\(\\) expects array\\<string, string\\>, array\\<string, int\\|string\\|true\\> given\\.$#"
+			message: "#^Parameter \\#1 \\$definition of method Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo\\<object\\>\\:\\:setSequenceGeneratorDefinition\\(\\) expects array\\<string, string\\>, array\\<string, int\\|string\\|true\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
@@ -591,18 +506,13 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
 		-
-			message: "#^Parameter \\#1 \\$subClass of method Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataFactory\\:\\:addNestedEmbeddedClasses\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
-
-		-
 			message: "#^Parameter \\#2 \\$class of method Doctrine\\\\ORM\\\\Mapping\\\\QuoteStrategy\\:\\:getSequenceName\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo given\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
 		-
 			message: "#^Parameter \\#2 \\$parent of method Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataFactory\\:\\:inheritIdGeneratorMapping\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 2
+			count: 1
 			path: lib/Doctrine/ORM/Mapping/ClassMetadataFactory.php
 
 		-
@@ -671,87 +581,27 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/DefaultEntityListenerResolver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$inheritanceType\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$inheritanceType\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isEmbeddedClass\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$isEmbeddedClass\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isMappedSuperclass\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$isMappedSuperclass\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$name\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addEntityListener\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addLifecycleCallback\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addNamedNativeQuery\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addNamedQuery\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addSqlResultSetMapping\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:enableCache\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:fullyQualifiedClassName\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:getAssociationCacheDefaults\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:isInheritedAssociation\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:isInheritedEmbeddedClass\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:isInheritedField\\(\\)\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$name\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
 			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapEmbedded\\(\\)\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapField\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
@@ -776,67 +626,127 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:markReadOnly\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addEntityListener\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setAssociationOverride\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addLifecycleCallback\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setAttributeOverride\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addNamedNativeQuery\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setChangeTrackingPolicy\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addNamedQuery\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setCustomGeneratorDefinition\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addSqlResultSetMapping\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setCustomRepositoryClass\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:enableCache\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:fullyQualifiedClassName\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:getAssociationCacheDefaults\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:isInheritedAssociation\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:isInheritedEmbeddedClass\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:isInheritedField\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapField\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:markReadOnly\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setAssociationOverride\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setAttributeOverride\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setChangeTrackingPolicy\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setCustomGeneratorDefinition\\(\\)\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
+
+		-
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setCustomRepositoryClass\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setDiscriminatorColumn\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setDiscriminatorColumn\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setDiscriminatorMap\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setDiscriminatorMap\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setIdGeneratorType\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setIdGeneratorType\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setInheritanceType\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setInheritanceType\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setPrimaryTable\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setPrimaryTable\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setSequenceGeneratorDefinition\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setSequenceGeneratorDefinition\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setVersionMapping\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setVersionMapping\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
@@ -846,187 +756,187 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of static method Doctrine\\\\ORM\\\\Mapping\\\\Builder\\\\EntityListenerBuilder\\:\\:bindEntityListener\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Parameter \\#1 \\$metadata of static method Doctrine\\\\ORM\\\\Mapping\\\\Builder\\\\EntityListenerBuilder\\:\\:bindEntityListener\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/AnnotationDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$name\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$name\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$table\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$table\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapManyToMany\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapManyToMany\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Mapping\\\\Driver\\\\DatabaseDriver\\:\\:buildFieldMappings\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Mapping\\\\Driver\\\\DatabaseDriver\\:\\:buildFieldMappings\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Mapping\\\\Driver\\\\DatabaseDriver\\:\\:buildIndexes\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Mapping\\\\Driver\\\\DatabaseDriver\\:\\:buildIndexes\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Mapping\\\\Driver\\\\DatabaseDriver\\:\\:buildToOneAssociationMappings\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Parameter \\#1 \\$metadata of method Doctrine\\\\ORM\\\\Mapping\\\\Driver\\\\DatabaseDriver\\:\\:buildToOneAssociationMappings\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/DatabaseDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$inheritanceType\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$inheritanceType\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isEmbeddedClass\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$isEmbeddedClass\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isMappedSuperclass\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$isMappedSuperclass\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$table\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$table\\.$#"
 			count: 3
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addEntityListener\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addEntityListener\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addLifecycleCallback\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addLifecycleCallback\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addNamedNativeQuery\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addNamedNativeQuery\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addNamedQuery\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addNamedQuery\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addSqlResultSetMapping\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addSqlResultSetMapping\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:enableCache\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:enableCache\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:getAssociationCacheDefaults\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:getAssociationCacheDefaults\\(\\)\\.$#"
 			count: 4
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapEmbedded\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapEmbedded\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapField\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapField\\(\\)\\.$#"
 			count: 3
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapManyToMany\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapManyToMany\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapManyToOne\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapManyToOne\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapOneToMany\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapOneToMany\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapOneToOne\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapOneToOne\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:markReadOnly\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:markReadOnly\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setAssociationOverride\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setAssociationOverride\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setAttributeOverride\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setAttributeOverride\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setChangeTrackingPolicy\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setChangeTrackingPolicy\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setCustomGeneratorDefinition\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setCustomGeneratorDefinition\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setCustomRepositoryClass\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setCustomRepositoryClass\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setDiscriminatorColumn\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setDiscriminatorColumn\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setDiscriminatorMap\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setDiscriminatorMap\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setIdGeneratorType\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setIdGeneratorType\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setInheritanceType\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setInheritanceType\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setPrimaryTable\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setPrimaryTable\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setSequenceGeneratorDefinition\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setSequenceGeneratorDefinition\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setVersionMapping\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setVersionMapping\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
@@ -1036,162 +946,162 @@ parameters:
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of static method Doctrine\\\\ORM\\\\Mapping\\\\Builder\\\\EntityListenerBuilder\\:\\:bindEntityListener\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Parameter \\#1 \\$metadata of static method Doctrine\\\\ORM\\\\Mapping\\\\Builder\\\\EntityListenerBuilder\\:\\:bindEntityListener\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/XmlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$inheritanceType\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$inheritanceType\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isEmbeddedClass\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$isEmbeddedClass\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$isMappedSuperclass\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$isMappedSuperclass\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$table\\.$#"
+			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:\\$table\\.$#"
 			count: 3
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addEntityListener\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addEntityListener\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addLifecycleCallback\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addLifecycleCallback\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addNamedNativeQuery\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addNamedNativeQuery\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addNamedQuery\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addNamedQuery\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:addSqlResultSetMapping\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:addSqlResultSetMapping\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:enableCache\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:enableCache\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:getAssociationCacheDefaults\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:getAssociationCacheDefaults\\(\\)\\.$#"
 			count: 4
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapEmbedded\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapEmbedded\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapField\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapField\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapManyToMany\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapManyToMany\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapManyToOne\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapManyToOne\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapOneToMany\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapOneToMany\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:mapOneToOne\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:mapOneToOne\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:markReadOnly\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:markReadOnly\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setAssociationOverride\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setAssociationOverride\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setAttributeOverride\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setAttributeOverride\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setChangeTrackingPolicy\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setChangeTrackingPolicy\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setCustomGeneratorDefinition\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setCustomGeneratorDefinition\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setCustomRepositoryClass\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setCustomRepositoryClass\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setDiscriminatorColumn\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setDiscriminatorColumn\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setDiscriminatorMap\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setDiscriminatorMap\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setIdGeneratorType\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setIdGeneratorType\\(\\)\\.$#"
 			count: 2
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setInheritanceType\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setInheritanceType\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setPrimaryTable\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setPrimaryTable\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setSequenceGeneratorDefinition\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setSequenceGeneratorDefinition\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:setVersionMapping\\(\\)\\.$#"
+			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\>\\:\\:setVersionMapping\\(\\)\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
 		-
-			message: "#^Parameter \\#1 \\$metadata of static method Doctrine\\\\ORM\\\\Mapping\\\\Builder\\\\EntityListenerBuilder\\:\\:bindEntityListener\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
+			message: "#^Parameter \\#1 \\$metadata of static method Doctrine\\\\ORM\\\\Mapping\\\\Builder\\\\EntityListenerBuilder\\:\\:bindEntityListener\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadata, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\<T of object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Mapping/Driver/YamlDriver.php
 
@@ -1241,27 +1151,7 @@ parameters:
 			path: lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php
 
 		-
-			message: "#^Method Doctrine\\\\ORM\\\\Persisters\\\\Entity\\\\BasicEntityPersister\\:\\:getManyToManyStatement\\(\\) should return Doctrine\\\\DBAL\\\\Driver\\\\Statement but returns Doctrine\\\\DBAL\\\\Driver\\\\ResultStatement&Doctrine\\\\DBAL\\\\Result\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php
-
-		-
-			message: "#^Method Doctrine\\\\ORM\\\\Persisters\\\\Entity\\\\BasicEntityPersister\\:\\:getOneToManyStatement\\(\\) should return Doctrine\\\\DBAL\\\\Statement but returns Doctrine\\\\DBAL\\\\Driver\\\\ResultStatement&Doctrine\\\\DBAL\\\\Result\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php
-
-		-
 			message: "#^Parameter \\#1 \\$em of method Doctrine\\\\ORM\\\\Id\\\\AbstractIdGenerator\\:\\:generate\\(\\) expects Doctrine\\\\ORM\\\\EntityManager, Doctrine\\\\ORM\\\\EntityManagerInterface given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php
-
-		-
-			message: "#^Parameter \\#2 \\$stmt of method Doctrine\\\\ORM\\\\Persisters\\\\Entity\\\\BasicEntityPersister\\:\\:loadArrayFromStatement\\(\\) expects Doctrine\\\\DBAL\\\\Statement, Doctrine\\\\DBAL\\\\Driver\\\\Statement given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php
-
-		-
-			message: "#^Parameter \\#2 \\$stmt of method Doctrine\\\\ORM\\\\Persisters\\\\Entity\\\\BasicEntityPersister\\:\\:loadCollectionFromStatement\\(\\) expects Doctrine\\\\DBAL\\\\Statement, Doctrine\\\\DBAL\\\\Driver\\\\Statement given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Persisters/Entity/BasicEntityPersister.php
 
@@ -1344,26 +1234,6 @@ parameters:
 			message: "#^Parameter \\#2 \\$sqlParams of method Doctrine\\\\ORM\\\\Query\\:\\:evictResultSetCache\\(\\) expects array\\<string, mixed\\>, array\\<int, mixed\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Query.php
-
-		-
-			message: "#^Call to function is_array\\(\\) with Doctrine\\\\Common\\\\Collections\\\\ArrayCollection&iterable will always evaluate to false\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/QueryBuilder.php
-
-		-
-			message: "#^Method Doctrine\\\\ORM\\\\QueryBuilder\\:\\:getEntityManager\\(\\) should return Doctrine\\\\ORM\\\\EntityManager but returns Doctrine\\\\ORM\\\\EntityManagerInterface\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/QueryBuilder.php
-
-		-
-			message: "#^PHPDoc tag @param references unknown parameter\\: \\$where$#"
-			count: 2
-			path: lib/Doctrine/ORM/QueryBuilder.php
-
-		-
-			message: "#^Parameter \\#2 \\$dqlPart of method Doctrine\\\\ORM\\\\QueryBuilder\\:\\:add\\(\\) expects array\\<'join'\\|int, array\\<int\\|string, object\\>\\|string\\>\\|object\\|string, array\\<string, Doctrine\\\\ORM\\\\Query\\\\Expr\\\\Join\\> given\\.$#"
-			count: 2
-			path: lib/Doctrine/ORM/QueryBuilder.php
 
 		-
 			message: "#^Access to an undefined property Doctrine\\\\ORM\\\\Query\\\\AST\\\\Node\\:\\:\\$value\\.$#"
@@ -1606,7 +1476,7 @@ parameters:
 			path: lib/Doctrine/ORM/Query/SqlWalker.php
 
 		-
-			message: "#^Parameter \\#1 \\$entity of static method Doctrine\\\\ORM\\\\OptimisticLockException\\:\\:lockFailed\\(\\) expects object, string given\\.$#"
+			message: "#^Parameter \\#1 \\$entity of static method Doctrine\\\\ORM\\\\OptimisticLockException\\:\\:lockFailed\\(\\) expects object, class\\-string\\<object\\> given\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Query/SqlWalker.php
 
@@ -2111,6 +1981,26 @@ parameters:
 			path: lib/Doctrine/ORM/Query/TreeWalkerChainIterator.php
 
 		-
+			message: "#^Call to function is_array\\(\\) with Doctrine\\\\Common\\\\Collections\\\\ArrayCollection&iterable will always evaluate to false\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/QueryBuilder.php
+
+		-
+			message: "#^Method Doctrine\\\\ORM\\\\QueryBuilder\\:\\:getEntityManager\\(\\) should return Doctrine\\\\ORM\\\\EntityManager but returns Doctrine\\\\ORM\\\\EntityManagerInterface\\.$#"
+			count: 1
+			path: lib/Doctrine/ORM/QueryBuilder.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$where$#"
+			count: 2
+			path: lib/Doctrine/ORM/QueryBuilder.php
+
+		-
+			message: "#^Parameter \\#2 \\$dqlPart of method Doctrine\\\\ORM\\\\QueryBuilder\\:\\:add\\(\\) expects array\\<'join'\\|int, array\\<int\\|string, object\\>\\|string\\>\\|object\\|string, array\\<string, Doctrine\\\\ORM\\\\Query\\\\Expr\\\\Join\\> given\\.$#"
+			count: 2
+			path: lib/Doctrine/ORM/QueryBuilder.php
+
+		-
 			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Tools/Console/Command/ClearCache/QueryRegionCommand.php
@@ -2294,31 +2184,6 @@ parameters:
 			message: "#^Negated boolean expression is always false\\.$#"
 			count: 1
 			path: lib/Doctrine/ORM/Tools/SchemaTool.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$associationMappings\\.$#"
-			count: 5
-			path: lib/Doctrine/ORM/Tools/SchemaValidator.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$containsForeignIdentifier\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Tools/SchemaValidator.php
-
-		-
-			message: "#^Access to an undefined property Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:\\$name\\.$#"
-			count: 12
-			path: lib/Doctrine/ORM/Tools/SchemaValidator.php
-
-		-
-			message: "#^Call to an undefined method Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata\\:\\:getIdentifierColumnNames\\(\\)\\.$#"
-			count: 5
-			path: lib/Doctrine/ORM/Tools/SchemaValidator.php
-
-		-
-			message: "#^Parameter \\#1 \\$class of method Doctrine\\\\ORM\\\\Tools\\\\SchemaValidator\\:\\:validateClass\\(\\) expects Doctrine\\\\ORM\\\\Mapping\\\\ClassMetadataInfo, Doctrine\\\\Persistence\\\\Mapping\\\\ClassMetadata given\\.$#"
-			count: 1
-			path: lib/Doctrine/ORM/Tools/SchemaValidator.php
 
 		-
 			message: "#^Parameter \\#2 \\$code of class Doctrine\\\\ORM\\\\Tools\\\\ToolsException constructor expects int, string given\\.$#"
